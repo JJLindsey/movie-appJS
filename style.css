@@ -3,7 +3,7 @@
 
 :root {
     --primary-color: #01091f;
-    --secondary-color: #353e54;
+    --secondary-color: #002176;
 }
 * {
     box-sizing: border-box;
@@ -20,8 +20,17 @@ body {
     background-color: var(--secondary-color);
     color:rgb(217, 240, 254);
     margin:0;
-    font-size: 4rem;
+    font-size: 5rem;
     text-align: center;
+    padding-top: 12px;
+}
+#app-subtitle {
+    background-color: var(--secondary-color);
+    color:rgb(217, 240, 254);
+    font-size: 1rem;
+    margin:0;
+    text-align: center;
+    padding-top: 12px;
 }
 
 header {
@@ -32,7 +41,7 @@ header {
 }
 
 .search {
-    background-color: transparent;
+    background-color: white;
     border: 2px solid var(--primary-color);
     border-radius: 50px;
     font-family: inherit;
@@ -42,18 +51,20 @@ header {
 }
 
 .search::placeholder {
-    color:lightskyblue;
+    color:rgb(45, 45, 45);
+    padding-left: 8px;
 }
 
 .search:focus {
     outline: none;
-    background-color: var(--primary-color);
+    background-color: grey;
+    padding-left: 8px;
 }
 
 main {
     display: flex;
     flex-wrap: wrap;
-
+    justify-content: center;
 }
 
 .movie {
