@@ -22,13 +22,12 @@ body {
     padding: 30px;
     top: 9px;
     background-image: url('./assets/film.png');
-    background-size: cover; /* or 'contain' depending on the effect you want */
+    background-size: cover;
     background-position: center;
 }
 
 #app-title {
     /* font-family: 'Limelight', cursive; */
-    /* background-color: var(--secondary-color); */
     color:rgb(255, 255, 255);
     margin:0;
     font-size: 5rem;
@@ -37,7 +36,6 @@ body {
     text-shadow: 2px 2px 5px rgb(43, 67, 253);
 }
 #app-subtitle {
-    /* background-color: var(--secondary-color); */
     color:rgb(255, 255, 255);
     font-size: 1rem;
     margin:0;
