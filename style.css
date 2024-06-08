@@ -15,22 +15,35 @@ body {
     margin: 0;
 }
 
-#app-title {
-    font-family: 'Limelight', cursive;
+.banner {
+    position: relative;
+    text-align: center;
     background-color: var(--secondary-color);
-    color:rgb(217, 240, 254);
+    padding: 30px;
+    top: 9px;
+    background-image: url('./assets/film.png');
+    background-size: cover; /* or 'contain' depending on the effect you want */
+    background-position: center;
+}
+
+#app-title {
+    /* font-family: 'Limelight', cursive; */
+    /* background-color: var(--secondary-color); */
+    color:rgb(255, 255, 255);
     margin:0;
     font-size: 5rem;
     text-align: center;
     padding-top: 12px;
+    text-shadow: 2px 2px 5px rgb(43, 67, 253);
 }
 #app-subtitle {
-    background-color: var(--secondary-color);
-    color:rgb(217, 240, 254);
+    /* background-color: var(--secondary-color); */
+    color:rgb(255, 255, 255);
     font-size: 1rem;
     margin:0;
     text-align: center;
     padding-top: 12px;
+    text-shadow: 2px 2px 5px rgb(43, 67, 253);
 }
 
 header {
@@ -83,7 +96,7 @@ main {
 .movie-info {
     color:white;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     padding: 0.5rem 1rem 1rem;
     letter-spacing: 0.5px;
@@ -126,4 +139,40 @@ main {
 
 .movie:hover .overview {
     transform: translateY(0);
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.input-container .search {
+    width: 100%;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+.input-container .btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: none;
+    background: none;
+    padding: 0 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+}
+
+.input-container .btn i {
+    font-size: 16px;
+}
+
+.input-container .search:focus {
+    outline: none;
+    border-color: #333;
 }
