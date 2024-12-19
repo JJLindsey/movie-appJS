@@ -112,6 +112,7 @@ main {
 }
 
 .movie-info span {
+    background-color: #002176;
     padding: .25rem 0.5rem;
     border-radius: 3px;
     font-weight: bold;
