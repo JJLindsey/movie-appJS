@@ -27,10 +27,10 @@ function showMovies(movies) {
                 <img src="${IMG_PATH + poster_path}" alt="${title}">
                 <div class="movie-info">
                     <h3>${title}</h3>
-                    <span class="${getClassByRate(vote_average)}">${vote_average}</span>
+                    <span class="${getClassByRate(vote_average)}">rating: ${vote_average.toFixed(1)}/10</span>
                 </div>
                 <div class="overview">
-                    <h3>Overview</h3>
+                    <h3>Details</h3>
                     ${overview}
                 </div>
         `
