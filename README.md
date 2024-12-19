@@ -25,7 +25,7 @@ HTML
 CSS
 The Movie Database API
 
-<img src="./assets/screenMovie.png" height=300>
+<img src="./assets/movieAppscreen.png" height=300>
 
 
 
