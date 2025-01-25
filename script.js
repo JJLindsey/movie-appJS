@@ -4,6 +4,9 @@ const SEARCH_API = 'https://api.themoviedb.org/3/search/movie?api_key=1d38e702d5
 const main = document.getElementById('main')
 const form = document.getElementById('form')
 const search = document.getElementById('search')
+const like = './assets/like.png'
+const love = './assets/thumbs-up.png'
+const dislike = './assets/dislike.png'
 // GET initial movies
 getMovies(API_URL)
 
@@ -22,6 +25,18 @@ function showMovies(movies) {
 
         const movieEl = document.createElement('div')
         movieEl.classList.add('movie')
+
+        const voteIconEl = document.createElement('div')
+        voteIconEl.classList.add('vote-icon')
+
+        const iconVote = dislike
+        if(vote_average >=8) {
+            iconVote = love
+        } else if (vote_average >=5) {
+            iconVote = like
+        }
+
+        voteIconEl.innerHTML = `<img src="${iconVote}" alt="rating icon" class=icon>`
 
         movieEl.innerHTML = `
                 <img src="${IMG_PATH + poster_path}" alt="${title}">
