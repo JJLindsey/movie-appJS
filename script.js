@@ -26,17 +26,17 @@ function showMovies(movies) {
         const movieEl = document.createElement('div')
         movieEl.classList.add('movie')
 
-        const voteIconEl = document.createElement('div')
-        voteIconEl.classList.add('vote-icon')
+        // const voteIconEl = document.createElement('div')
+        // voteIconEl.classList.add('vote-icon')
 
-        const iconVote = dislike
-        if(vote_average >=8) {
-            iconVote = love
-        } else if (vote_average >=5) {
-            iconVote = like
-        }
+        // const iconVote = dislike
+        // if(vote_average >=8) {
+        //     iconVote = love
+        // } else if (vote_average >=5) {
+        //     iconVote = like
+        // }
 
-        voteIconEl.innerHTML = `<img src="${iconVote}" alt="rating icon" class=icon>`
+        // voteIconEl.innerHTML = `<img src="${iconVote}" alt="rating icon" class=icon>`
 
         movieEl.innerHTML = `
                 <img src="${IMG_PATH + poster_path}" alt="${title}">
@@ -55,7 +55,7 @@ function showMovies(movies) {
 
 function getClassByRate(vote) {
     if(vote >= 8){
-        return 'green'
+        return love
     }else if(vote >= 5) {
         return 'orange'
     } else {
