@@ -42,7 +42,7 @@ function showMovies(movies) {
                 <img src="${IMG_PATH + poster_path}" alt="${title}">
                 <div class="movie-info">
                     <h3>${title}</h3>
-                    <span class="${getClassByRate(vote_average)}">rating: ${vote_average.toFixed(1)}/10</span>
+                    <span>rating: ${vote_average.toFixed(1)}/10</span>
                 </div>
                 <div class="overview">
                     <h3>Details</h3>
@@ -53,15 +53,15 @@ function showMovies(movies) {
     })
 }
 
-function getClassByRate(vote) {
-    if(vote >= 8){
-        return 'green'
-    }else if(vote >= 5) {
-        return 'orange'
-    } else {
-        return 'red'
-    }
-}
+// function getClassByRate(vote) {
+//     if(vote >= 8){
+//         return 'green'
+//     }else if(vote >= 5) {
+//         return 'orange'
+//     } else {
+//         return 'red'
+//     }
+// }
 
 form.addEventListener('submit', (e) => {
     e.preventDefault()
